@@ -1,0 +1,2615 @@
+﻿admin@OCT2EPG01>ManagedElement=1
+
+(exec) ManagedElement=1
+admin@OCT2EPG01>Epg=1
+
+(exec) ManagedElement=1,Epg=1
+admin@OCT2EPG01>Pgw=1
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=
+console.te
+hos
+ims
+internet.te.eg
+Internet1
+mms.te.eg
+tb.te.eg
+te.mobile
+te.radio
+testAPN
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tes
+testAPN
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=testAPN
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb
+tb.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.r
+te.radio
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.radio
+,
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.radio
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=
+console.te
+hos
+ims
+internet.te.eg
+Internet1
+mms.te.eg
+tb.te.eg
+te.mobile
+te.radio
+testAPN
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=In
+Internet1
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=Internet1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te
+te.mobile
+te.radio
+testAPN
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.m
+te.mobile
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.mobile
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=inte
+internet.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=internet.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>creation=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te
+te.mobile
+te.radio
+testAPN
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=testAPN
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>up
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=test
+testAPN
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=testAPN
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>ter
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: testAPN
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb
+tb.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>ter
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: tb.te.eg
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.ra
+te.radio
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.radio
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>term
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: te.radio
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=In
+Internet1
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=Internet1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>termin
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: Internet1
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te
+te.mobile
+te.radio
+testAPN
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.m
+te.mobile
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.mobile
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>term
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: te.mobile
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=inte
+internet.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=internet.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>termin
+terminate
+terminateIdleSessionShow
+terminateIdleSessionStart
+terminateIdleSessionStop
+terminateImsi
+terminateSharedIpPool
+terminateUserCategory
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>terminate
+apn-pdp-context-deletion-results:
+    apn-name: internet.te.eg
+
+    interface-pdp-context-deletion-information:
+
+        interface-pdp-context-deletion:
+            service-interface: gc-0/5/1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=internet.te.eg
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>statistics
+apn-statistics-information:
+
+    apn-statistics:
+        name: internet.te.eg
+
+        pdp-context-statistics:
+            pdp-active: 0
+            eps-active-bearer: 0
+            eps-active-dedicated-bearer: 0
+            eps-active-bearer-wlan: 0
+            pdp-active-ipv6: 0
+            pdp-active-ipv4v6: 0
+            eps-active-ipv6-bearer: 0
+            eps-active-ipv4v6-bearer: 0
+            eps-active-bearer-nb-iot: 0
+            pdp-attempted-activation: 53903307
+            pdp-completed-activation: 51235579
+            pdp-attempted-activation-ipv6: 64
+            pdp-completed-activation-ipv6: 0
+            pdp-attempted-activation-ipv4v6: 865
+            pdp-completed-activation-ipv4v6: 0
+            pdp-attempted-activation-dynamic: 53903307
+            pdp-completed-activation-dynamic: 51235579
+            pdp-attempted-authentication-activation: 0
+            pdp-completed-authentication-activation: 0
+            eps-attempted-bearer-activation: 20069593
+            eps-completed-bearer-activation: 15280914
+            eps-attempted-dedicated-bearer-activation: 0
+            eps-completed-dedicated-bearer-activation: 0
+            eps-attempted-ipv6-bearer-activation: 871117
+            eps-completed-ipv6-bearer-activation: 0
+            eps-attempted-ipv6-dedicated-bearer-activation: 0
+            eps-completed-ipv6-dedicated-bearer-activation: 0
+            attempted-pcrf-assisted-apn-selection: 0
+            completed-pcrf-assisted-apn-selection: 0
+            eps-attempted-ipv4v6-bearer-activation: 3790872
+            eps-completed-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-bearer-activation: 0
+            eps-completed-s2b-bearer-activation: 0
+            eps-attempted-s2b-ipv6-bearer-activation: 0
+            eps-completed-s2b-ipv6-bearer-activation: 0
+            eps-attempted-s2b-ipv4v6-bearer-activation: 0
+            eps-completed-s2b-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-dedicated-bearer-activation: 0
+            eps-completed-s2b-dedicated-bearer-activation: 0
+            eps-attempted-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-completed-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-active-s2b-dedicated-bearer: 0
+            pdp-attempted-deactivation: 54788204
+            pdp-completed-deactivation: 53256722
+            pdp-attempted-mobile-deactivation: 51280444
+            pdp-completed-mobile-deactivation: 49748999
+            pdp-attempted-node-deactivation: 3507760
+            pdp-completed-node-deactivation: 3507723
+            pdp-completed-idle-deactivation: 0
+            pdp-completed-session-deactivation: 0
+            eps-attempted-bearer-deactivation: 13526650
+            eps-completed-bearer-deactivation: 13517375
+            eps-attempted-s5-ue-sgw-deactivation: 9783643
+            eps-completed-s5-ue-sgw-deactivation: 9774368
+            eps-attempted-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-completed-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-attempted-s5-network-bearer-deactivation: 3743007
+            eps-completed-s5-network-bearer-deactivation: 3743007
+            eps-attempted-s5-network-dedicated-bearer-deactivation: 0
+            eps-completed-s5-network-dedicated-bearer-deactivation: 0
+            eps-attempted-s2b-bearer-deactivation: 0
+            eps-completed-s2b-bearer-deactivation: 0
+            pdp-attempted-mobile-sgsn-update: 114369035
+            pdp-completed-mobile-sgsn-update: 114176396
+            eps-attempted-s5-sgw-to-sgsn-update: 42720343
+            eps-completed-s5-sgw-to-sgsn-update: 42582218
+            eps-attempted-s5-ue-sgw-modification: 57171690
+            eps-completed-s5-ue-sgw-modification: 57142160
+            eps-attempted-s5-sgsn-to-sgw-modification: 40529832
+            eps-completed-s5-sgsn-to-sgw-modification: 40521084
+            pdp-attempted-ggsn-update: 241953
+            pdp-completed-ggsn-update: 0
+            eps-attempted-s5-network-modification: 37925882
+            eps-completed-s5-network-modification: 34705845
+            eps-attempted-s5-network-dedicated-bearer-modification: 0
+            eps-completed-s5-network-dedicated-bearer-modification: 0
+            pdp-maximum: 163196
+            pdp-mean: 18
+            ims-dedicated-completed-activation: 0
+            ims-dedicated-failed-activation: 0
+            ims-general-completed-activation: 0
+            ims-general-failed-activation: 0
+            ims-general-active-failed-activation: 0
+
+        statistics-3gdt:
+            active-3gdt: 0
+            ratio-3gdt: 0
+            successful-3gdt-activations: 0
+            total-3gdt-request: 0
+            errors-3gdt: 0
+            total-dropped-downlink-3gdt-error-handling: 0
+            errors-missing-gtp-info-3gdt: 0
+
+            uplink-traffic-3gdt:
+                uplink-bytes-3gdt: 0
+                uplink-bytes-ipv6-3gdt: 0
+                uplink-packets-3gdt: 0
+                uplink-packets-ipv6-3gdt: 0
+
+            downlink-traffic-3gdt:
+                downlink-bytes-3gdt: 0
+                downlink-bytes-ipv6-3gdt: 0
+                downlink-packets-3gdt: 0
+                downlink-packets-ipv6-3gdt: 0
+
+        uplink:
+            packets: 38141527630
+            bytes: 6204137432913
+            dropped-packets: 633105173
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 160445
+
+        uplink-gn:
+            packets: 30513677897
+            bytes: 4786759115295
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s5:
+            packets: 7627849733
+            bytes: 1417378317618
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink:
+            packets: 54705129210
+            bytes: 58822227633198
+            dropped-packets: 462799464
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 0
+
+        downlink-gn:
+            packets: 42518374435
+            bytes: 45028615702486
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s5:
+            packets: 12186754775
+            bytes: 13793611930712
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        rulespace-based-charging-statistics:
+
+            rs-statistics:
+                rs-identifier: TE_Internet_RS
+                uplink-statistics: 6204137379609
+                downlink-statistics: 58822227192287
+                discarded-uplink: 621528019
+                discarded-downlink: 462731341
+                gate-discarded-uplink: 0
+                gate-discarded-downlink: 0
+
+        signalling:
+
+            incoming:
+                packets: 0
+                bytes: 0
+
+            outgoing:
+                packets: 133032986
+                bytes: 42206959540
+
+        neighbor-solicitation-req-received: 0
+        neighbor-solicitation-req-responded: 0
+        router-solicitation-req-received: 0
+        router-solicitation-req-responded: 0
+        tft-filter-count: 0
+
+        sbcc-statistics-information:
+            prepaid-user: 0
+            prepaid-pdp-creates-attempted: 68161310
+            prepaid-pdp-creates-failed: 691319
+            pdp-initiated-deactivation: 2442304
+            external-prs-update: 0
+            external-credit-update: 0
+            attempted-service-initiated-qos-modification: 0
+            attempted-service-initiated-dedicated-bearers: 0
+            completed-service-initiated-dedicated-bearers: 0
+            attempted-service-initiated-dedicated-bearers-with-tft: 0
+            completed-service-initiated-dedicated-bearers-with-tft: 0
+            activation-bearer-ctrl-accept: 0
+            activation-bearer-ctrl-reject: 0
+            activation-bearer-ctrl-upgrade: 0
+            activation-bearer-ctrl-downgrade: 0
+            modification-bearer-ctrl-accept: 0
+            modification-bearer-ctrl-deactivate: 0
+            modification-bearer-ctrl-upgrade: 0
+            modification-bearer-ctrl-downgrade: 0
+            activation-no-bearer-ctrl-accept: 0
+            activation-no-bearer-ctrl-reject: 0
+            activation-no-bearer-ctrl-downgrade: 0
+            modification-no-bearer-ctrl-accept: 0
+            modification-no-bearer-ctrl-deactivate: 0
+            modification-no-bearer-ctrl-downgrade: 0
+
+            service-based-charging-for-gx:
+
+                ccr-statistics:
+                    ccr-identifier: DAS_TE_OCTSAPC_GX
+                    authorization-failure: 0
+                    authentication-failure: 0
+                    session-failure: 47
+                    contexts-with-usage-reporting-active: 0
+                    active-ipcan-sessions: 0
+                    active-dedicated-ipcan-bearers: 0
+                    raa-with-pending-transaction-sent: 0
+                    cca-with-pending-transaction-received: 0
+                    termination-due-to-race-condition-loop: 0
+
+                active-predefined-charging-rules: 23835
+                active-predefined-charging-rulebases: 0
+                dynamic-charging-rules: 0
+
+            pras-information:
+
+                pras-statistics:
+                    pras-identifier: DAS_TE_OCTSAPC_GX
+                    pras-start-request: 68930118
+                    pras-start-request-failed: 563537
+                    pras-update-request: 0
+                    pras-update-request-failed: 0
+                    pras-stop-request: 68160412
+                    pras-stop-request-failed: 408167
+
+            ccas-information:
+
+                ccas-statistics:
+                    ccas-identifier: DAS_TE_OCS_GY
+                    ccas-start-request: 68158789
+                    ccas-start-request-failed: 691319
+                    ccas-update-request: 426141770
+                    ccas-update-request-failed: 2443728
+                    ccas-stop-request: 65023742
+                    ccas-stop-request-failed: 6066308
+                    ccas-user-service-denied: 0
+                    ccas-user-unknown: 4892
+                    ccas-authorization-failure: 0
+                    ccas-cc-not-applicable: 0
+                    ccas-event-request: 0
+                    ccas-event-request-failed: 0
+
+            rating-group-information:
+
+                rating-group-statistics:
+                    rating-group-identifier: 10
+                    uplink-bytes: 322958381247
+                    downlink-bytes: 2097780000589
+
+                rating-group-statistics:
+                    rating-group-identifier: 11
+                    uplink-bytes: 1650800046132
+                    downlink-bytes: 16617971236053
+
+                rating-group-statistics:
+                    rating-group-identifier: 12
+                    uplink-bytes: 15665764828
+                    downlink-bytes: 199594219877
+
+                rating-group-statistics:
+                    rating-group-identifier: 13
+                    uplink-bytes: 131988690402
+                    downlink-bytes: 2004538392438
+
+                rating-group-statistics:
+                    rating-group-identifier: 14
+                    uplink-bytes: 31708884280
+                    downlink-bytes: 181275777206
+
+                rating-group-statistics:
+                    rating-group-identifier: 15
+                    uplink-bytes: 32431509748
+                    downlink-bytes: 525509457282
+
+                rating-group-statistics:
+                    rating-group-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                rating-group-statistics:
+                    rating-group-identifier: 17
+                    uplink-bytes: 1104985591354
+                    downlink-bytes: 6657673305102
+
+                rating-group-statistics:
+                    rating-group-identifier: 18
+                    uplink-bytes: 2380876807
+                    downlink-bytes: 80486122024
+
+                rating-group-statistics:
+                    rating-group-identifier: 200
+                    uplink-bytes: 183983190260
+                    downlink-bytes: 248997811649
+
+                rating-group-statistics:
+                    rating-group-identifier: 993
+                    uplink-bytes: 4969489330
+                    downlink-bytes: 37466496827
+
+                rating-group-statistics:
+                    rating-group-identifier: 999
+                    uplink-bytes: 2721235565265
+                    downlink-bytes: 30136288484011
+
+            service-id-information:
+
+                service-id-statistics:
+                    service-id-identifier: 10
+                    uplink-bytes: 322958381247
+                    downlink-bytes: 2097780000589
+
+                service-id-statistics:
+                    service-id-identifier: 11
+                    uplink-bytes: 1650800046132
+                    downlink-bytes: 16617971236053
+
+                service-id-statistics:
+                    service-id-identifier: 12
+                    uplink-bytes: 15665764828
+                    downlink-bytes: 199594219877
+
+                service-id-statistics:
+                    service-id-identifier: 13
+                    uplink-bytes: 131988690402
+                    downlink-bytes: 2004538392438
+
+                service-id-statistics:
+                    service-id-identifier: 14
+                    uplink-bytes: 31708884280
+                    downlink-bytes: 181275777206
+
+                service-id-statistics:
+                    service-id-identifier: 15
+                    uplink-bytes: 32431509748
+                    downlink-bytes: 525509457282
+
+                service-id-statistics:
+                    service-id-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                service-id-statistics:
+                    service-id-identifier: 17
+                    uplink-bytes: 1104985591354
+                    downlink-bytes: 6657673305102
+
+                service-id-statistics:
+                    service-id-identifier: 18
+                    uplink-bytes: 2918260655
+                    downlink-bytes: 97935670544
+
+                service-id-statistics:
+                    service-id-identifier: 200
+                    uplink-bytes: 183983190260
+                    downlink-bytes: 248997811649
+
+                service-id-statistics:
+                    service-id-identifier: 992
+                    uplink-bytes: 303428635305
+                    downlink-bytes: 6245467357085
+
+                service-id-statistics:
+                    service-id-identifier: 993
+                    uplink-bytes: 4969489330
+                    downlink-bytes: 37466496827
+
+                service-id-statistics:
+                    service-id-identifier: 999
+                    uplink-bytes: 2417269546112
+                    downlink-bytes: 23873371578406
+
+        radius-statistics-information:
+            radius-authentication-failure: 0
+            accounting-failure: 133036981
+
+        apn-radius-server-statistics:
+
+            apn-radius-acct-servers:
+
+                apn-radius-acct-server-statistics:
+                    apn-radius-acct-server-address: 10.98.28.2
+                    apn-radius-acct-requests-sent: 399098958
+                    apn-radius-acct-responses-received: 0
+                    apn-radius-acct-requests-timed-out: 399098958
+                    apn-radius-acct-requests-retransmitted: 266065972
+                    apn-radius-acct-invalid-authenticators-received: 0
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>up
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>SharedIpPool=Internet_Pool_1
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>sta
+status
+statistics
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>status=blocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>SharedIpPool=In
+Internet_Pool_1
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>SharedIpPool=Internet_Pool_1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.48.0.0/13
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.48.0.0/13
+admin@OCT2EPG01>priority="13"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.48.0.0/13
+admin@OCT2EPG01>sta
+status
+statistics
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.48.0.0/13
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.48.0.0/13
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.56.0.0/14
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.56.0.0/14
+admin@OCT2EPG01>priority="14"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.56.0.0/14
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.56.0.0/14
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.60.0.0/15
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.60.0.0/15
+admin@OCT2EPG01>priority="15"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.60.0.0/15
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.60.0.0/15
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.62.0.0/16
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.62.0.0/16
+admin@OCT2EPG01>priority="16"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.62.0.0/16
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.62.0.0/16
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.0.0/17
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.0.0/17
+admin@OCT2EPG01>priority="17"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.0.0/17
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.0.0/17
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.128.0/18
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.128.0/18
+admin@OCT2EPG01>priority="18"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.128.0/18
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.128.0/18
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.192.0/19
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.192.0/19
+admin@OCT2EPG01>priority="19"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.192.0/19
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.192.0/19
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.224.0/20
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.224.0/20
+admin@OCT2EPG01>priority="20"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.224.0/20
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.224.0/20
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.240.0/21
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.240.0/21
+admin@OCT2EPG01>priority="21"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.240.0/21
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.240.0/21
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.248.0/22
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.248.0/22
+admin@OCT2EPG01>priority="22"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.248.0/22
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.248.0/22
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.252.0/23
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.252.0/23
+admin@OCT2EPG01>priority="23"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.252.0/23
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.252.0/23
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.254.0?
+<new>   String  valid regular expression:^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3})(/([0-9]|[1-2][0-9]|3[0-2]))?$ [optional]
+IPv4 address range
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>Address=10.63.254.0/24
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.254.0/24
+admin@OCT2EPG01>priority="24"
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.254.0/24
+admin@OCT2EPG01>stat
+status
+statistics
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.254.0/24
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1,Address=10.63.254.0/24
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>no Address=10.48.0.0/12
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>in
+Interface=1
+InternalDebug=1
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>SharedIpPool=Internet_Pool_1
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>sh
+show
+show-config
+show-dn
+show-mib
+show-rollback-diff
+show-table
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>show
+SharedIpPool=Internet_Pool_1
+   addressReuseTime=200
+   roundRobinAllocation
+   status=blocked
+   Address=10.48.0.0/13
+   Address=10.56.0.0/14
+   Address=10.60.0.0/15
+   Address=10.62.0.0/16
+   Address=10.63.0.0/17
+   Address=10.63.128.0/18
+   Address=10.63.192.0/19
+   Address=10.63.224.0/20
+   Address=10.63.240.0/21
+   Address=10.63.248.0/22
+   Address=10.63.252.0/23
+   Address=10.63.254.0/24
+   Ipv6Address=2001:4388:4::/48
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>sh
+show
+show-config
+show-dn
+show-mib
+show-rollback-diff
+show-table
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>show-config
+SharedIpPool=Internet_Pool_1
+   addressReuseTime=200
+   roundRobinAllocation
+   status=blocked
+   Address=10.48.0.0/13
+      priority="13"
+      status=unblocked
+      up
+   Address=10.56.0.0/14
+      priority="14"
+      status=unblocked
+      up
+   Address=10.60.0.0/15
+      priority="15"
+      status=unblocked
+      up
+   Address=10.62.0.0/16
+      priority="16"
+      status=unblocked
+      up
+   Address=10.63.0.0/17
+      priority="17"
+      status=unblocked
+      up
+   Address=10.63.128.0/18
+      priority="18"
+      status=unblocked
+      up
+   Address=10.63.192.0/19
+      priority="19"
+      status=unblocked
+      up
+   Address=10.63.224.0/20
+      priority="20"
+      status=unblocked
+      up
+   Address=10.63.240.0/21
+      priority="21"
+      status=unblocked
+      up
+   Address=10.63.248.0/22
+      priority="22"
+      status=unblocked
+      up
+   Address=10.63.252.0/23
+      priority="23"
+      status=unblocked
+      up
+   Address=10.63.254.0/24
+      priority="24"
+      status=unblocked
+      up
+   Ipv6Address=2001:4388:4::/48
+      status=unblocked
+      up
+   up
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>sta
+status
+statistics
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>status=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,SharedIpPool=Internet_Pool_1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>configure
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=test
+testAPN
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=testAPN
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=testAPN
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb
+tb.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=tb.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=tb.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.ra
+te.radio
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.radio
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.radio
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=In
+Internet1
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=Internet1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=Internet1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.mo
+te.mobile
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=te.mobile
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=te.mobile
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=inte
+internet.te.eg
+<cr>
+<new>
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=internet.te.eg
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>PdpContext=1
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>creation=
+ERROR: 'creation=' is incomplete
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>creation=unblocked
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg,PdpContext=1
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>up
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>validate
+Transaction is valid!
+
+(config) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>commit
+
+(exec) ManagedElement=1,Epg=1,Pgw=1
+admin@OCT2EPG01>Apn=internet.te.eg
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>statistics
+apn-statistics-information:
+
+    apn-statistics:
+        name: internet.te.eg
+
+        pdp-context-statistics:
+            pdp-active: 212
+            eps-active-bearer: 78
+            eps-active-dedicated-bearer: 0
+            eps-active-bearer-wlan: 0
+            pdp-active-ipv6: 0
+            pdp-active-ipv4v6: 0
+            eps-active-ipv6-bearer: 0
+            eps-active-ipv4v6-bearer: 0
+            eps-active-bearer-nb-iot: 0
+            pdp-attempted-activation: 53931792
+            pdp-completed-activation: 51235822
+            pdp-attempted-activation-ipv6: 64
+            pdp-completed-activation-ipv6: 0
+            pdp-attempted-activation-ipv4v6: 865
+            pdp-completed-activation-ipv4v6: 0
+            pdp-attempted-activation-dynamic: 53931792
+            pdp-completed-activation-dynamic: 51235822
+            pdp-attempted-authentication-activation: 0
+            pdp-completed-authentication-activation: 0
+            eps-attempted-bearer-activation: 20084456
+            eps-completed-bearer-activation: 15281059
+            eps-attempted-dedicated-bearer-activation: 0
+            eps-completed-dedicated-bearer-activation: 0
+            eps-attempted-ipv6-bearer-activation: 871514
+            eps-completed-ipv6-bearer-activation: 0
+            eps-attempted-ipv6-dedicated-bearer-activation: 0
+            eps-completed-ipv6-dedicated-bearer-activation: 0
+            attempted-pcrf-assisted-apn-selection: 0
+            completed-pcrf-assisted-apn-selection: 0
+            eps-attempted-ipv4v6-bearer-activation: 3794260
+            eps-completed-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-bearer-activation: 0
+            eps-completed-s2b-bearer-activation: 0
+            eps-attempted-s2b-ipv6-bearer-activation: 0
+            eps-completed-s2b-ipv6-bearer-activation: 0
+            eps-attempted-s2b-ipv4v6-bearer-activation: 0
+            eps-completed-s2b-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-dedicated-bearer-activation: 0
+            eps-completed-s2b-dedicated-bearer-activation: 0
+            eps-attempted-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-completed-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-active-s2b-dedicated-bearer: 0
+            pdp-attempted-deactivation: 54788247
+            pdp-completed-deactivation: 53256765
+            pdp-attempted-mobile-deactivation: 51280487
+            pdp-completed-mobile-deactivation: 49749042
+            pdp-attempted-node-deactivation: 3507760
+            pdp-completed-node-deactivation: 3507723
+            pdp-completed-idle-deactivation: 0
+            pdp-completed-session-deactivation: 0
+            eps-attempted-bearer-deactivation: 13526705
+            eps-completed-bearer-deactivation: 13517430
+            eps-attempted-s5-ue-sgw-deactivation: 9783698
+            eps-completed-s5-ue-sgw-deactivation: 9774423
+            eps-attempted-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-completed-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-attempted-s5-network-bearer-deactivation: 3743007
+            eps-completed-s5-network-bearer-deactivation: 3743007
+            eps-attempted-s5-network-dedicated-bearer-deactivation: 0
+            eps-completed-s5-network-dedicated-bearer-deactivation: 0
+            eps-attempted-s2b-bearer-deactivation: 0
+            eps-completed-s2b-bearer-deactivation: 0
+            pdp-attempted-mobile-sgsn-update: 114369050
+            pdp-completed-mobile-sgsn-update: 114176411
+            eps-attempted-s5-sgw-to-sgsn-update: 42720357
+            eps-completed-s5-sgw-to-sgsn-update: 42582232
+            eps-attempted-s5-ue-sgw-modification: 57171693
+            eps-completed-s5-ue-sgw-modification: 57142163
+            eps-attempted-s5-sgsn-to-sgw-modification: 40529834
+            eps-completed-s5-sgsn-to-sgw-modification: 40521086
+            pdp-attempted-ggsn-update: 241953
+            pdp-completed-ggsn-update: 0
+            eps-attempted-s5-network-modification: 37925885
+            eps-completed-s5-network-modification: 34705846
+            eps-attempted-s5-network-dedicated-bearer-modification: 0
+            eps-completed-s5-network-dedicated-bearer-modification: 0
+            pdp-maximum: 163196
+            pdp-mean: 280
+            ims-dedicated-completed-activation: 0
+            ims-dedicated-failed-activation: 0
+            ims-general-completed-activation: 0
+            ims-general-failed-activation: 0
+            ims-general-active-failed-activation: 0
+
+        statistics-3gdt:
+            active-3gdt: 0
+            ratio-3gdt: 0
+            successful-3gdt-activations: 0
+            total-3gdt-request: 0
+            errors-3gdt: 0
+            total-dropped-downlink-3gdt-error-handling: 0
+            errors-missing-gtp-info-3gdt: 0
+
+            uplink-traffic-3gdt:
+                uplink-bytes-3gdt: 0
+                uplink-bytes-ipv6-3gdt: 0
+                uplink-packets-3gdt: 0
+                uplink-packets-ipv6-3gdt: 0
+
+            downlink-traffic-3gdt:
+                downlink-bytes-3gdt: 0
+                downlink-bytes-ipv6-3gdt: 0
+                downlink-packets-3gdt: 0
+                downlink-packets-ipv6-3gdt: 0
+
+        uplink:
+            packets: 38141558773
+            bytes: 6204143156647
+            dropped-packets: 633105881
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 160447
+
+        uplink-gn:
+            packets: 30513704049
+            bytes: 4786763943616
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s5:
+            packets: 7627854724
+            bytes: 1417379213031
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink:
+            packets: 54705165402
+            bytes: 58822257625348
+            dropped-packets: 462799768
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 0
+
+        downlink-gn:
+            packets: 42518401963
+            bytes: 45028636393493
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s5:
+            packets: 12186763439
+            bytes: 13793621231855
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        rulespace-based-charging-statistics:
+
+            rs-statistics:
+                rs-identifier: TE_Internet_RS
+                uplink-statistics: 6204142654039
+                downlink-statistics: 58822255626977
+                discarded-uplink: 621528722
+                discarded-downlink: 462731645
+                gate-discarded-uplink: 0
+                gate-discarded-downlink: 0
+
+        signalling:
+
+            incoming:
+                packets: 0
+                bytes: 0
+
+            outgoing:
+                packets: 133033472
+                bytes: 42207116769
+
+        neighbor-solicitation-req-received: 0
+        neighbor-solicitation-req-responded: 0
+        router-solicitation-req-received: 0
+        router-solicitation-req-responded: 0
+        tft-filter-count: 0
+
+        sbcc-statistics-information:
+            prepaid-user: 289
+            prepaid-pdp-creates-attempted: 68161704
+            prepaid-pdp-creates-failed: 691324
+            pdp-initiated-deactivation: 2442304
+            external-prs-update: 0
+            external-credit-update: 0
+            attempted-service-initiated-qos-modification: 0
+            attempted-service-initiated-dedicated-bearers: 0
+            completed-service-initiated-dedicated-bearers: 0
+            attempted-service-initiated-dedicated-bearers-with-tft: 0
+            completed-service-initiated-dedicated-bearers-with-tft: 0
+            activation-bearer-ctrl-accept: 0
+            activation-bearer-ctrl-reject: 0
+            activation-bearer-ctrl-upgrade: 0
+            activation-bearer-ctrl-downgrade: 0
+            modification-bearer-ctrl-accept: 0
+            modification-bearer-ctrl-deactivate: 0
+            modification-bearer-ctrl-upgrade: 0
+            modification-bearer-ctrl-downgrade: 0
+            activation-no-bearer-ctrl-accept: 0
+            activation-no-bearer-ctrl-reject: 0
+            activation-no-bearer-ctrl-downgrade: 0
+            modification-no-bearer-ctrl-accept: 0
+            modification-no-bearer-ctrl-deactivate: 0
+            modification-no-bearer-ctrl-downgrade: 0
+
+            service-based-charging-for-gx:
+
+                ccr-statistics:
+                    ccr-identifier: DAS_TE_OCTSAPC_GX
+                    authorization-failure: 0
+                    authentication-failure: 0
+                    session-failure: 47
+                    contexts-with-usage-reporting-active: 0
+                    active-ipcan-sessions: 291
+                    active-dedicated-ipcan-bearers: 0
+                    raa-with-pending-transaction-sent: 0
+                    cca-with-pending-transaction-received: 0
+                    termination-due-to-race-condition-loop: 0
+
+                active-predefined-charging-rules: 26745
+                active-predefined-charging-rulebases: 0
+                dynamic-charging-rules: 0
+
+            pras-information:
+
+                pras-statistics:
+                    pras-identifier: DAS_TE_OCTSAPC_GX
+                    pras-start-request: 68930512
+                    pras-start-request-failed: 563537
+                    pras-update-request: 0
+                    pras-update-request-failed: 0
+                    pras-stop-request: 68160515
+                    pras-stop-request-failed: 408167
+
+            ccas-information:
+
+                ccas-statistics:
+                    ccas-identifier: DAS_TE_OCS_GY
+                    ccas-start-request: 68159182
+                    ccas-start-request-failed: 691324
+                    ccas-update-request: 426142198
+                    ccas-update-request-failed: 2443728
+                    ccas-stop-request: 65023840
+                    ccas-stop-request-failed: 6066308
+                    ccas-user-service-denied: 0
+                    ccas-user-unknown: 4892
+                    ccas-authorization-failure: 0
+                    ccas-cc-not-applicable: 0
+                    ccas-event-request: 0
+                    ccas-event-request-failed: 0
+
+            rating-group-information:
+
+                rating-group-statistics:
+                    rating-group-identifier: 10
+                    uplink-bytes: 322958504712
+                    downlink-bytes: 2097780730746
+
+                rating-group-statistics:
+                    rating-group-identifier: 11
+                    uplink-bytes: 1650802230107
+                    downlink-bytes: 16617981847211
+
+                rating-group-statistics:
+                    rating-group-identifier: 12
+                    uplink-bytes: 15665767258
+                    downlink-bytes: 199594219877
+
+                rating-group-statistics:
+                    rating-group-identifier: 13
+                    uplink-bytes: 131988888437
+                    downlink-bytes: 2004542596443
+
+                rating-group-statistics:
+                    rating-group-identifier: 14
+                    uplink-bytes: 31708886486
+                    downlink-bytes: 181275784160
+
+                rating-group-statistics:
+                    rating-group-identifier: 15
+                    uplink-bytes: 32431531047
+                    downlink-bytes: 525509613808
+
+                rating-group-statistics:
+                    rating-group-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                rating-group-statistics:
+                    rating-group-identifier: 17
+                    uplink-bytes: 1104986588134
+                    downlink-bytes: 6657675532002
+
+                rating-group-statistics:
+                    rating-group-identifier: 18
+                    uplink-bytes: 2380876807
+                    downlink-bytes: 80486122024
+
+                rating-group-statistics:
+                    rating-group-identifier: 200
+                    uplink-bytes: 183983473838
+                    downlink-bytes: 248998111125
+
+                rating-group-statistics:
+                    rating-group-identifier: 993
+                    uplink-bytes: 4969506419
+                    downlink-bytes: 37466599551
+
+                rating-group-statistics:
+                    rating-group-identifier: 999
+                    uplink-bytes: 2721237009478
+                    downlink-bytes: 30136298570301
+
+            service-id-information:
+
+                service-id-statistics:
+                    service-id-identifier: 10
+                    uplink-bytes: 322958504712
+                    downlink-bytes: 2097780730746
+
+                service-id-statistics:
+                    service-id-identifier: 11
+                    uplink-bytes: 1650802230107
+                    downlink-bytes: 16617981847211
+
+                service-id-statistics:
+                    service-id-identifier: 12
+                    uplink-bytes: 15665767258
+                    downlink-bytes: 199594219877
+
+                service-id-statistics:
+                    service-id-identifier: 13
+                    uplink-bytes: 131988888437
+                    downlink-bytes: 2004542596443
+
+                service-id-statistics:
+                    service-id-identifier: 14
+                    uplink-bytes: 31708886486
+                    downlink-bytes: 181275784160
+
+                service-id-statistics:
+                    service-id-identifier: 15
+                    uplink-bytes: 32431531047
+                    downlink-bytes: 525509613808
+
+                service-id-statistics:
+                    service-id-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                service-id-statistics:
+                    service-id-identifier: 17
+                    uplink-bytes: 1104986588134
+                    downlink-bytes: 6657675532002
+
+                service-id-statistics:
+                    service-id-identifier: 18
+                    uplink-bytes: 2918260655
+                    downlink-bytes: 97935670544
+
+                service-id-statistics:
+                    service-id-identifier: 200
+                    uplink-bytes: 183983473838
+                    downlink-bytes: 248998111125
+
+                service-id-statistics:
+                    service-id-identifier: 992
+                    uplink-bytes: 303428846951
+                    downlink-bytes: 6245468192589
+
+                service-id-statistics:
+                    service-id-identifier: 993
+                    uplink-bytes: 4969506419
+                    downlink-bytes: 37466599551
+
+                service-id-statistics:
+                    service-id-identifier: 999
+                    uplink-bytes: 2417270778679
+                    downlink-bytes: 23873380829192
+
+        radius-statistics-information:
+            radius-authentication-failure: 0
+            accounting-failure: 133037290
+
+        apn-radius-server-statistics:
+
+            apn-radius-acct-servers:
+
+                apn-radius-acct-server-statistics:
+                    apn-radius-acct-server-address: 10.98.28.2
+                    apn-radius-acct-requests-sent: 399100223
+                    apn-radius-acct-responses-received: 0
+                    apn-radius-acct-requests-timed-out: 399100046
+                    apn-radius-acct-requests-retransmitted: 266066752
+                    apn-radius-acct-invalid-authenticators-received: 0
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>statistics
+apn-statistics-information:
+
+    apn-statistics:
+        name: internet.te.eg
+
+        pdp-context-statistics:
+            pdp-active: 796
+            eps-active-bearer: 190
+            eps-active-dedicated-bearer: 0
+            eps-active-bearer-wlan: 0
+            pdp-active-ipv6: 0
+            pdp-active-ipv4v6: 0
+            eps-active-ipv6-bearer: 0
+            eps-active-ipv4v6-bearer: 0
+            eps-active-bearer-nb-iot: 0
+            pdp-attempted-activation: 53932632
+            pdp-completed-activation: 51236662
+            pdp-attempted-activation-ipv6: 64
+            pdp-completed-activation-ipv6: 0
+            pdp-attempted-activation-ipv4v6: 865
+            pdp-completed-activation-ipv4v6: 0
+            pdp-attempted-activation-dynamic: 53932632
+            pdp-completed-activation-dynamic: 51236662
+            pdp-attempted-authentication-activation: 0
+            pdp-completed-authentication-activation: 0
+            eps-attempted-bearer-activation: 20084832
+            eps-completed-bearer-activation: 15281383
+            eps-attempted-dedicated-bearer-activation: 0
+            eps-completed-dedicated-bearer-activation: 0
+            eps-attempted-ipv6-bearer-activation: 871522
+            eps-completed-ipv6-bearer-activation: 0
+            eps-attempted-ipv6-dedicated-bearer-activation: 0
+            eps-completed-ipv6-dedicated-bearer-activation: 0
+            attempted-pcrf-assisted-apn-selection: 0
+            completed-pcrf-assisted-apn-selection: 0
+            eps-attempted-ipv4v6-bearer-activation: 3794348
+            eps-completed-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-bearer-activation: 0
+            eps-completed-s2b-bearer-activation: 0
+            eps-attempted-s2b-ipv6-bearer-activation: 0
+            eps-completed-s2b-ipv6-bearer-activation: 0
+            eps-attempted-s2b-ipv4v6-bearer-activation: 0
+            eps-completed-s2b-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-dedicated-bearer-activation: 0
+            eps-completed-s2b-dedicated-bearer-activation: 0
+            eps-attempted-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-completed-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-active-s2b-dedicated-bearer: 0
+            pdp-attempted-deactivation: 54788529
+            pdp-completed-deactivation: 53257045
+            pdp-attempted-mobile-deactivation: 51280764
+            pdp-completed-mobile-deactivation: 49749317
+            pdp-attempted-node-deactivation: 3507765
+            pdp-completed-node-deactivation: 3507728
+            pdp-completed-idle-deactivation: 0
+            pdp-completed-session-deactivation: 0
+            eps-attempted-bearer-deactivation: 13526895
+            eps-completed-bearer-deactivation: 13517620
+            eps-attempted-s5-ue-sgw-deactivation: 9783886
+            eps-completed-s5-ue-sgw-deactivation: 9774611
+            eps-attempted-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-completed-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-attempted-s5-network-bearer-deactivation: 3743009
+            eps-completed-s5-network-bearer-deactivation: 3743009
+            eps-attempted-s5-network-dedicated-bearer-deactivation: 0
+            eps-completed-s5-network-dedicated-bearer-deactivation: 0
+            eps-attempted-s2b-bearer-deactivation: 0
+            eps-completed-s2b-bearer-deactivation: 0
+            pdp-attempted-mobile-sgsn-update: 114369147
+            pdp-completed-mobile-sgsn-update: 114176508
+            eps-attempted-s5-sgw-to-sgsn-update: 42720417
+            eps-completed-s5-sgw-to-sgsn-update: 42582292
+            eps-attempted-s5-ue-sgw-modification: 57171717
+            eps-completed-s5-ue-sgw-modification: 57142187
+            eps-attempted-s5-sgsn-to-sgw-modification: 40529871
+            eps-completed-s5-sgsn-to-sgw-modification: 40521123
+            pdp-attempted-ggsn-update: 241954
+            pdp-completed-ggsn-update: 0
+            eps-attempted-s5-network-modification: 37925915
+            eps-completed-s5-network-modification: 34705874
+            eps-attempted-s5-network-dedicated-bearer-modification: 0
+            eps-completed-s5-network-dedicated-bearer-modification: 0
+            pdp-maximum: 163196
+            pdp-mean: 976
+            ims-dedicated-completed-activation: 0
+            ims-dedicated-failed-activation: 0
+            ims-general-completed-activation: 0
+            ims-general-failed-activation: 0
+            ims-general-active-failed-activation: 0
+
+        statistics-3gdt:
+            active-3gdt: 0
+            ratio-3gdt: 0
+            successful-3gdt-activations: 0
+            total-3gdt-request: 0
+            errors-3gdt: 0
+            total-dropped-downlink-3gdt-error-handling: 0
+            errors-missing-gtp-info-3gdt: 0
+
+            uplink-traffic-3gdt:
+                uplink-bytes-3gdt: 0
+                uplink-bytes-ipv6-3gdt: 0
+                uplink-packets-3gdt: 0
+                uplink-packets-ipv6-3gdt: 0
+
+            downlink-traffic-3gdt:
+                downlink-bytes-3gdt: 0
+                downlink-bytes-ipv6-3gdt: 0
+                downlink-packets-3gdt: 0
+                downlink-packets-ipv6-3gdt: 0
+
+        uplink:
+            packets: 38141955741
+            bytes: 6204227138367
+            dropped-packets: 633113323
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 160453
+
+        uplink-gn:
+            packets: 30514047604
+            bytes: 4786841319915
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s5:
+            packets: 7627908137
+            bytes: 1417385818452
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink:
+            packets: 54705687452
+            bytes: 58822772504286
+            dropped-packets: 462803699
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 0
+
+        downlink-gn:
+            packets: 42518848761
+            bytes: 45029063704507
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s5:
+            packets: 12186838691
+            bytes: 13793708799779
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        rulespace-based-charging-statistics:
+
+            rs-statistics:
+                rs-identifier: TE_Internet_RS
+                uplink-statistics: 6204225250482
+                downlink-statistics: 58822764923300
+                discarded-uplink: 621535882
+                discarded-downlink: 462735576
+                gate-discarded-uplink: 0
+                gate-discarded-downlink: 0
+
+        signalling:
+
+            incoming:
+                packets: 0
+                bytes: 0
+
+            outgoing:
+                packets: 133035104
+                bytes: 42207641617
+
+        neighbor-solicitation-req-received: 0
+        neighbor-solicitation-req-responded: 0
+        router-solicitation-req-received: 0
+        router-solicitation-req-responded: 0
+        tft-filter-count: 0
+
+        sbcc-statistics-information:
+            prepaid-user: 986
+            prepaid-pdp-creates-attempted: 68162891
+            prepaid-pdp-creates-failed: 691348
+            pdp-initiated-deactivation: 2442304
+            external-prs-update: 0
+            external-credit-update: 0
+            attempted-service-initiated-qos-modification: 0
+            attempted-service-initiated-dedicated-bearers: 0
+            completed-service-initiated-dedicated-bearers: 0
+            attempted-service-initiated-dedicated-bearers-with-tft: 0
+            completed-service-initiated-dedicated-bearers-with-tft: 0
+            activation-bearer-ctrl-accept: 0
+            activation-bearer-ctrl-reject: 0
+            activation-bearer-ctrl-upgrade: 0
+            activation-bearer-ctrl-downgrade: 0
+            modification-bearer-ctrl-accept: 0
+            modification-bearer-ctrl-deactivate: 0
+            modification-bearer-ctrl-upgrade: 0
+            modification-bearer-ctrl-downgrade: 0
+            activation-no-bearer-ctrl-accept: 0
+            activation-no-bearer-ctrl-reject: 0
+            activation-no-bearer-ctrl-downgrade: 0
+            modification-no-bearer-ctrl-accept: 0
+            modification-no-bearer-ctrl-deactivate: 0
+            modification-no-bearer-ctrl-downgrade: 0
+
+            service-based-charging-for-gx:
+
+                ccr-statistics:
+                    ccr-identifier: DAS_TE_OCTSAPC_GX
+                    authorization-failure: 0
+                    authentication-failure: 0
+                    session-failure: 47
+                    contexts-with-usage-reporting-active: 0
+                    active-ipcan-sessions: 986
+                    active-dedicated-ipcan-bearers: 0
+                    raa-with-pending-transaction-sent: 0
+                    cca-with-pending-transaction-received: 0
+                    termination-due-to-race-condition-loop: 0
+
+                active-predefined-charging-rules: 33695
+                active-predefined-charging-rulebases: 0
+                dynamic-charging-rules: 0
+
+            pras-information:
+
+                pras-statistics:
+                    pras-identifier: DAS_TE_OCTSAPC_GX
+                    pras-start-request: 68931699
+                    pras-start-request-failed: 563537
+                    pras-update-request: 0
+                    pras-update-request-failed: 0
+                    pras-stop-request: 68161007
+                    pras-stop-request-failed: 408167
+
+            ccas-information:
+
+                ccas-statistics:
+                    ccas-identifier: DAS_TE_OCS_GY
+                    ccas-start-request: 68160369
+                    ccas-start-request-failed: 691348
+                    ccas-update-request: 426144235
+                    ccas-update-request-failed: 2443728
+                    ccas-stop-request: 65024308
+                    ccas-stop-request-failed: 6066308
+                    ccas-user-service-denied: 0
+                    ccas-user-unknown: 4892
+                    ccas-authorization-failure: 0
+                    ccas-cc-not-applicable: 0
+                    ccas-event-request: 0
+                    ccas-event-request-failed: 0
+
+            rating-group-information:
+
+                rating-group-statistics:
+                    rating-group-identifier: 10
+                    uplink-bytes: 322960193114
+                    downlink-bytes: 2097794652835
+
+                rating-group-statistics:
+                    rating-group-identifier: 11
+                    uplink-bytes: 1650835015147
+                    downlink-bytes: 16618108852623
+
+                rating-group-statistics:
+                    rating-group-identifier: 12
+                    uplink-bytes: 15665772032
+                    downlink-bytes: 199594227504
+
+                rating-group-statistics:
+                    rating-group-identifier: 13
+                    uplink-bytes: 131991820882
+                    downlink-bytes: 2004598988220
+
+                rating-group-statistics:
+                    rating-group-identifier: 14
+                    uplink-bytes: 31709660831
+                    downlink-bytes: 181275887580
+
+                rating-group-statistics:
+                    rating-group-identifier: 15
+                    uplink-bytes: 32431671495
+                    downlink-bytes: 525510479457
+
+                rating-group-statistics:
+                    rating-group-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                rating-group-statistics:
+                    rating-group-identifier: 17
+                    uplink-bytes: 1105000580823
+                    downlink-bytes: 6657731547667
+
+                rating-group-statistics:
+                    rating-group-identifier: 18
+                    uplink-bytes: 2380876807
+                    downlink-bytes: 80486122024
+
+                rating-group-statistics:
+                    rating-group-identifier: 200
+                    uplink-bytes: 183986177532
+                    downlink-bytes: 249001003620
+
+                rating-group-statistics:
+                    rating-group-identifier: 993
+                    uplink-bytes: 4969593939
+                    downlink-bytes: 37467231185
+
+                rating-group-statistics:
+                    rating-group-identifier: 999
+                    uplink-bytes: 2721264488484
+                    downlink-bytes: 30136549967420
+
+            service-id-information:
+
+                service-id-statistics:
+                    service-id-identifier: 10
+                    uplink-bytes: 322960193114
+                    downlink-bytes: 2097794652835
+
+                service-id-statistics:
+                    service-id-identifier: 11
+                    uplink-bytes: 1650835015147
+                    downlink-bytes: 16618108852623
+
+                service-id-statistics:
+                    service-id-identifier: 12
+                    uplink-bytes: 15665772032
+                    downlink-bytes: 199594227504
+
+                service-id-statistics:
+                    service-id-identifier: 13
+                    uplink-bytes: 131991820882
+                    downlink-bytes: 2004598988220
+
+                service-id-statistics:
+                    service-id-identifier: 14
+                    uplink-bytes: 31709660831
+                    downlink-bytes: 181275887580
+
+                service-id-statistics:
+                    service-id-identifier: 15
+                    uplink-bytes: 32431671495
+                    downlink-bytes: 525510479457
+
+                service-id-statistics:
+                    service-id-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                service-id-statistics:
+                    service-id-identifier: 17
+                    uplink-bytes: 1105000580823
+                    downlink-bytes: 6657731547667
+
+                service-id-statistics:
+                    service-id-identifier: 18
+                    uplink-bytes: 2918260655
+                    downlink-bytes: 97935670544
+
+                service-id-statistics:
+                    service-id-identifier: 200
+                    uplink-bytes: 183986177532
+                    downlink-bytes: 249001003620
+
+                service-id-statistics:
+                    service-id-identifier: 992
+                    uplink-bytes: 303432851642
+                    downlink-bytes: 6245569664279
+
+                service-id-statistics:
+                    service-id-identifier: 993
+                    uplink-bytes: 4969593939
+                    downlink-bytes: 37467231185
+
+                service-id-statistics:
+                    service-id-identifier: 999
+                    uplink-bytes: 2417294252994
+                    downlink-bytes: 23873530754621
+
+        radius-statistics-information:
+            radius-authentication-failure: 0
+            accounting-failure: 133038923
+
+        apn-radius-server-statistics:
+
+            apn-radius-acct-servers:
+
+                apn-radius-acct-server-statistics:
+                    apn-radius-acct-server-address: 10.98.28.2
+                    apn-radius-acct-requests-sent: 399105134
+                    apn-radius-acct-responses-received: 0
+                    apn-radius-acct-requests-timed-out: 399104957
+                    apn-radius-acct-requests-retransmitted: 266070030
+                    apn-radius-acct-invalid-authenticators-received: 0
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
+admin@OCT2EPG01>statistics
+apn-statistics-information:
+
+    apn-statistics:
+        name: internet.te.eg
+
+        pdp-context-statistics:
+            pdp-active: 949
+            eps-active-bearer: 221
+            eps-active-dedicated-bearer: 0
+            eps-active-bearer-wlan: 0
+            pdp-active-ipv6: 0
+            pdp-active-ipv4v6: 0
+            eps-active-ipv6-bearer: 0
+            eps-active-ipv4v6-bearer: 0
+            eps-active-bearer-nb-iot: 0
+            pdp-attempted-activation: 53932910
+            pdp-completed-activation: 51236938
+            pdp-attempted-activation-ipv6: 64
+            pdp-completed-activation-ipv6: 0
+            pdp-attempted-activation-ipv4v6: 865
+            pdp-completed-activation-ipv4v6: 0
+            pdp-attempted-activation-dynamic: 53932910
+            pdp-completed-activation-dynamic: 51236938
+            pdp-attempted-authentication-activation: 0
+            pdp-completed-authentication-activation: 0
+            eps-attempted-bearer-activation: 20084963
+            eps-completed-bearer-activation: 15281501
+            eps-attempted-dedicated-bearer-activation: 0
+            eps-completed-dedicated-bearer-activation: 0
+            eps-attempted-ipv6-bearer-activation: 871526
+            eps-completed-ipv6-bearer-activation: 0
+            eps-attempted-ipv6-dedicated-bearer-activation: 0
+            eps-completed-ipv6-dedicated-bearer-activation: 0
+            attempted-pcrf-assisted-apn-selection: 0
+            completed-pcrf-assisted-apn-selection: 0
+            eps-attempted-ipv4v6-bearer-activation: 3794372
+            eps-completed-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-bearer-activation: 0
+            eps-completed-s2b-bearer-activation: 0
+            eps-attempted-s2b-ipv6-bearer-activation: 0
+            eps-completed-s2b-ipv6-bearer-activation: 0
+            eps-attempted-s2b-ipv4v6-bearer-activation: 0
+            eps-completed-s2b-ipv4v6-bearer-activation: 0
+            eps-attempted-s2b-dedicated-bearer-activation: 0
+            eps-completed-s2b-dedicated-bearer-activation: 0
+            eps-attempted-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-completed-s2b-ipv6-dedicated-bearer-activation: 0
+            eps-active-s2b-dedicated-bearer: 0
+            pdp-attempted-deactivation: 54788669
+            pdp-completed-deactivation: 53257185
+            pdp-attempted-mobile-deactivation: 51280902
+            pdp-completed-mobile-deactivation: 49749455
+            pdp-attempted-node-deactivation: 3507767
+            pdp-completed-node-deactivation: 3507730
+            pdp-completed-idle-deactivation: 0
+            pdp-completed-session-deactivation: 0
+            eps-attempted-bearer-deactivation: 13526966
+            eps-completed-bearer-deactivation: 13517691
+            eps-attempted-s5-ue-sgw-deactivation: 9783957
+            eps-completed-s5-ue-sgw-deactivation: 9774682
+            eps-attempted-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-completed-s5-ue-sgw-dedicated-bearer-deactivation: 0
+            eps-attempted-s5-network-bearer-deactivation: 3743009
+            eps-completed-s5-network-bearer-deactivation: 3743009
+            eps-attempted-s5-network-dedicated-bearer-deactivation: 0
+            eps-completed-s5-network-dedicated-bearer-deactivation: 0
+            eps-attempted-s2b-bearer-deactivation: 0
+            eps-completed-s2b-bearer-deactivation: 0
+            pdp-attempted-mobile-sgsn-update: 114369191
+            pdp-completed-mobile-sgsn-update: 114176552
+            eps-attempted-s5-sgw-to-sgsn-update: 42720449
+            eps-completed-s5-sgw-to-sgsn-update: 42582324
+            eps-attempted-s5-ue-sgw-modification: 57171732
+            eps-completed-s5-ue-sgw-modification: 57142202
+            eps-attempted-s5-sgsn-to-sgw-modification: 40529887
+            eps-completed-s5-sgsn-to-sgw-modification: 40521139
+            pdp-attempted-ggsn-update: 241954
+            pdp-completed-ggsn-update: 0
+            eps-attempted-s5-network-modification: 37925929
+            eps-completed-s5-network-modification: 34705885
+            eps-attempted-s5-network-dedicated-bearer-modification: 0
+            eps-completed-s5-network-dedicated-bearer-modification: 0
+            pdp-maximum: 163196
+            pdp-mean: 1167
+            ims-dedicated-completed-activation: 0
+            ims-dedicated-failed-activation: 0
+            ims-general-completed-activation: 0
+            ims-general-failed-activation: 0
+            ims-general-active-failed-activation: 0
+
+        statistics-3gdt:
+            active-3gdt: 0
+            ratio-3gdt: 0
+            successful-3gdt-activations: 0
+            total-3gdt-request: 0
+            errors-3gdt: 0
+            total-dropped-downlink-3gdt-error-handling: 0
+            errors-missing-gtp-info-3gdt: 0
+
+            uplink-traffic-3gdt:
+                uplink-bytes-3gdt: 0
+                uplink-bytes-ipv6-3gdt: 0
+                uplink-packets-3gdt: 0
+                uplink-packets-ipv6-3gdt: 0
+
+            downlink-traffic-3gdt:
+                downlink-bytes-3gdt: 0
+                downlink-bytes-ipv6-3gdt: 0
+                downlink-packets-3gdt: 0
+                downlink-packets-ipv6-3gdt: 0
+
+        uplink:
+            packets: 38142218002
+            bytes: 6204267691925
+            dropped-packets: 633118014
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 160515
+
+        uplink-gn:
+            packets: 30514269526
+            bytes: 4786877436043
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s5:
+            packets: 7627948477
+            bytes: 1417390256615
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        uplink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink:
+            packets: 54706052177
+            bytes: 58823164716611
+            dropped-packets: 462805986
+            packets-ipv6: 0
+            bytes-ipv6: 0
+            dropped-packets-ipv6: 0
+
+        downlink-gn:
+            packets: 42519147027
+            bytes: 45029371381568
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s5:
+            packets: 12186905150
+            bytes: 13793793335043
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2a:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        downlink-s2b:
+            packets: 0
+            bytes: 0
+            packets-ipv6: 0
+            bytes-ipv6: 0
+
+        rulespace-based-charging-statistics:
+
+            rs-statistics:
+                rs-identifier: TE_Internet_RS
+                uplink-statistics: 6204265082403
+                downlink-statistics: 58823152345871
+                discarded-uplink: 621540482
+                discarded-downlink: 462737863
+                gate-discarded-uplink: 0
+                gate-discarded-downlink: 0
+
+        signalling:
+
+            incoming:
+                packets: 0
+                bytes: 0
+
+            outgoing:
+                packets: 133035708
+                bytes: 42207835164
+
+        neighbor-solicitation-req-received: 0
+        neighbor-solicitation-req-responded: 0
+        router-solicitation-req-received: 0
+        router-solicitation-req-responded: 0
+        tft-filter-count: 0
+
+        sbcc-statistics-information:
+            prepaid-user: 1170
+            prepaid-pdp-creates-attempted: 68163291
+            prepaid-pdp-creates-failed: 691354
+            pdp-initiated-deactivation: 2442304
+            external-prs-update: 0
+            external-credit-update: 0
+            attempted-service-initiated-qos-modification: 0
+            attempted-service-initiated-dedicated-bearers: 0
+            completed-service-initiated-dedicated-bearers: 0
+            attempted-service-initiated-dedicated-bearers-with-tft: 0
+            completed-service-initiated-dedicated-bearers-with-tft: 0
+            activation-bearer-ctrl-accept: 0
+            activation-bearer-ctrl-reject: 0
+            activation-bearer-ctrl-upgrade: 0
+            activation-bearer-ctrl-downgrade: 0
+            modification-bearer-ctrl-accept: 0
+            modification-bearer-ctrl-deactivate: 0
+            modification-bearer-ctrl-upgrade: 0
+            modification-bearer-ctrl-downgrade: 0
+            activation-no-bearer-ctrl-accept: 0
+            activation-no-bearer-ctrl-reject: 0
+            activation-no-bearer-ctrl-downgrade: 0
+            modification-no-bearer-ctrl-accept: 0
+            modification-no-bearer-ctrl-deactivate: 0
+            modification-no-bearer-ctrl-downgrade: 0
+
+            service-based-charging-for-gx:
+
+                ccr-statistics:
+                    ccr-identifier: DAS_TE_OCTSAPC_GX
+                    authorization-failure: 0
+                    authentication-failure: 0
+                    session-failure: 47
+                    contexts-with-usage-reporting-active: 0
+                    active-ipcan-sessions: 1170
+                    active-dedicated-ipcan-bearers: 0
+                    raa-with-pending-transaction-sent: 0
+                    cca-with-pending-transaction-received: 0
+                    termination-due-to-race-condition-loop: 0
+
+                active-predefined-charging-rules: 35535
+                active-predefined-charging-rulebases: 0
+                dynamic-charging-rules: 0
+
+            pras-information:
+
+                pras-statistics:
+                    pras-identifier: DAS_TE_OCTSAPC_GX
+                    pras-start-request: 68932099
+                    pras-start-request-failed: 563537
+                    pras-update-request: 0
+                    pras-update-request-failed: 0
+                    pras-stop-request: 68161223
+                    pras-stop-request-failed: 408167
+
+            ccas-information:
+
+                ccas-statistics:
+                    ccas-identifier: DAS_TE_OCS_GY
+                    ccas-start-request: 68160770
+                    ccas-start-request-failed: 691354
+                    ccas-update-request: 426145016
+                    ccas-update-request-failed: 2443728
+                    ccas-stop-request: 65024518
+                    ccas-stop-request-failed: 6066314
+                    ccas-user-service-denied: 0
+                    ccas-user-unknown: 4892
+                    ccas-authorization-failure: 0
+                    ccas-cc-not-applicable: 0
+                    ccas-event-request: 0
+                    ccas-event-request-failed: 0
+
+            rating-group-information:
+
+                rating-group-statistics:
+                    rating-group-identifier: 10
+                    uplink-bytes: 322961628679
+                    downlink-bytes: 2097807796479
+
+                rating-group-statistics:
+                    rating-group-identifier: 11
+                    uplink-bytes: 1650846138024
+                    downlink-bytes: 16618187092541
+
+                rating-group-statistics:
+                    rating-group-identifier: 12
+                    uplink-bytes: 15665775079
+                    downlink-bytes: 199594227504
+
+                rating-group-statistics:
+                    rating-group-identifier: 13
+                    uplink-bytes: 131993565826
+                    downlink-bytes: 2004621876853
+
+                rating-group-statistics:
+                    rating-group-identifier: 14
+                    uplink-bytes: 31710023730
+                    downlink-bytes: 181286216158
+
+                rating-group-statistics:
+                    rating-group-identifier: 15
+                    uplink-bytes: 32431891043
+                    downlink-bytes: 525513824951
+
+                rating-group-statistics:
+                    rating-group-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                rating-group-statistics:
+                    rating-group-identifier: 17
+                    uplink-bytes: 1105012050095
+                    downlink-bytes: 6657787568533
+
+                rating-group-statistics:
+                    rating-group-identifier: 18
+                    uplink-bytes: 2380878441
+                    downlink-bytes: 80486129217
+
+                rating-group-statistics:
+                    rating-group-identifier: 200
+                    uplink-bytes: 183987838205
+                    downlink-bytes: 249002730748
+
+                rating-group-statistics:
+                    rating-group-identifier: 993
+                    uplink-bytes: 4969615536
+                    downlink-bytes: 37467374437
+
+                rating-group-statistics:
+                    rating-group-identifier: 999
+                    uplink-bytes: 2721276266189
+                    downlink-bytes: 30136751447869
+
+            service-id-information:
+
+                service-id-statistics:
+                    service-id-identifier: 10
+                    uplink-bytes: 322961628679
+                    downlink-bytes: 2097807796479
+
+                service-id-statistics:
+                    service-id-identifier: 11
+                    uplink-bytes: 1650846138024
+                    downlink-bytes: 16618187092541
+
+                service-id-statistics:
+                    service-id-identifier: 12
+                    uplink-bytes: 15665775079
+                    downlink-bytes: 199594227504
+
+                service-id-statistics:
+                    service-id-identifier: 13
+                    uplink-bytes: 131993565826
+                    downlink-bytes: 2004621876853
+
+                service-id-statistics:
+                    service-id-identifier: 14
+                    uplink-bytes: 31710023730
+                    downlink-bytes: 181286216158
+
+                service-id-statistics:
+                    service-id-identifier: 15
+                    uplink-bytes: 32431891043
+                    downlink-bytes: 525513824951
+
+                service-id-statistics:
+                    service-id-identifier: 16
+                    uplink-bytes: 698371514
+                    downlink-bytes: 32074879995
+
+                service-id-statistics:
+                    service-id-identifier: 17
+                    uplink-bytes: 1105012050095
+                    downlink-bytes: 6657787568533
+
+                service-id-statistics:
+                    service-id-identifier: 18
+                    uplink-bytes: 2918262289
+                    downlink-bytes: 97935677737
+
+                service-id-statistics:
+                    service-id-identifier: 200
+                    uplink-bytes: 183987838205
+                    downlink-bytes: 249002730748
+
+                service-id-statistics:
+                    service-id-identifier: 992
+                    uplink-bytes: 303435394630
+                    downlink-bytes: 6245629357349
+
+                service-id-statistics:
+                    service-id-identifier: 993
+                    uplink-bytes: 4969615536
+                    downlink-bytes: 37467374437
+
+                service-id-statistics:
+                    service-id-identifier: 999
+                    uplink-bytes: 2417303487711
+                    downlink-bytes: 23873672542000
+
+        radius-statistics-information:
+            radius-authentication-failure: 0
+            accounting-failure: 133039523
+
+        apn-radius-server-statistics:
+
+            apn-radius-acct-servers:
+
+                apn-radius-acct-server-statistics:
+                    apn-radius-acct-server-address: 10.98.28.2
+                    apn-radius-acct-requests-sent: 399106965
+                    apn-radius-acct-responses-received: 0
+                    apn-radius-acct-requests-timed-out: 399106785
+                    apn-radius-acct-requests-retransmitted: 266071257
+                    apn-radius-acct-invalid-authenticators-received: 0
+
+(exec) ManagedElement=1,Epg=1,Pgw=1,Apn=internet.te.eg
