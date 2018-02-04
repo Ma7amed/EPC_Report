@@ -6,6 +6,8 @@ import java.util.ArrayList;
  */
 public class EPG {
 
+    private String epgName;
+
     private ArrayList<EPGSlot> slots;
     private ArrayList<EPGCard> cards;
     private ArrayList<EPGPort> ports;
@@ -32,13 +34,14 @@ public class EPG {
         notifications = new ArrayList<>();
     }
 
-    public EPG(String fileName) {
+    public EPG(String epgName,String fileName) {
 
         slots = new ArrayList<>();
         cards = new ArrayList<>();
         ports = new ArrayList<>();
         notifications = new ArrayList<>();
         this.cmdOutFile = new File(fileName);
+        this.epgName = epgName;
     }
 
     public ArrayList<EPGSlot> getSlots() {
@@ -173,6 +176,14 @@ public class EPG {
 
     public void setEpgStatistics(EPGStatistics epgStatistics) {
         this.epgStatistics = epgStatistics;
+    }
+
+    public String getEpgName() {
+        return epgName;
+    }
+
+    public void setEpgName(String epgName) {
+        this.epgName = epgName;
     }
 
     @Override

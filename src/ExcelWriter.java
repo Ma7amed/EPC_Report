@@ -1,43 +1,92 @@
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFColor;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
+import java.util.ArrayList;
 
 /**
  * Created by Admin on 2/2/2018.
  */
 public class ExcelWriter {
 
-    public static void main(String[] args) {
-        EPG almazaEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\Almaza_EPG.txt");
-        EPG octEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\OCT2EPGPCI.txt");
 
+    public static void main(String[] args) {
+//        EPG almazaEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\Almaza_EPG.txt");
+//        EPG octEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\OCT2EPGPCI.txt");
+
+        EPG almazaEpg = new EPG("ALMAZA-EPG01","C:\\HC\\Almaza_EPG.txt");
+        EPG octEpg = new EPG("OCT-EPG01","C:\\HC\\OCT2EPGPCI.txt");
 
         EPGUtilities epgUtilities = new EPGUtilities();
         almazaEpg = epgUtilities.parseEPGCMDLog(almazaEpg.getCmdOutFile());
+        almazaEpg.setEpgName("ALMAZA-EPG01");
         octEpg = epgUtilities.parseEPGCMDLog(octEpg.getCmdOutFile());
+        octEpg.setEpgName("OCT-EPG01");
         ExcelWriter excelWriter = new ExcelWriter();
-        excelWriter.writeData(almazaEpg,"ALMAZA-EPG01");
-        excelWriter.writeData(octEpg,"OCT-EPG01");
+        ArrayList<EPG> epgs = new ArrayList<>();
+        epgs.add(almazaEpg);
+        epgs.add(octEpg);
+
+        excelWriter.writeData(epgs);
+
+//        excelWriter.writeData(almazaEpg);
+//        excelWriter.writeData(octEpg);
     }
 
-    private void writeData(EPG epg,String sheetName) {
-        //Read the spreadsheet that needs to be updated
+
+    private void writeData(ArrayList<EPG> epgs) {
+        //backup file
+        InputStream inp = null;
+        try {
+            // reading file from jar
+            System.out.println("reading file from jar");
+            inp = getClass().getResourceAsStream("/IPWork_EPG_report.xlsx");
+            Workbook wb = WorkbookFactory.create(inp);
+
+            // writing file to disk
+            System.out.println("writing file to disk");
+            FileOutputStream fileOut = new FileOutputStream(System.getProperty("user.dir") + "\\IPWork_EPG_report.xlsx");
+            wb.write(fileOut);
+            System.out.println("Done");
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (InvalidFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        //loop & write
+        for(EPG epg:epgs) {
+            writeData(epg);
+        }
+
+    }
+
+    private void writeData(EPG epg) {
+        //Read the spreadsheet that needs to be updated, then write the data on it
 
 
 
 
         try {
 
-            InputStream inp = new FileInputStream("D:\\Java\\MyProjects\\EPC_Report\\res\\IPWork_EPG_report.xlsx");
+//            InputStream inp = new FileInputStream("C:\\HC\\IPWork_EPG_report.xlsx");
+//            InputStream inp = new FileInputStream(System.getProperty("user.dir") + "\\res\\IPWork_EPG_report.xlsx");
+            System.out.println("Reading file for epg: " + epg.getEpgName());
+            InputStream inp = new FileInputStream(System.getProperty("user.dir") + "/IPWork_EPG_report.xlsx");
+
+
             Workbook wb = WorkbookFactory.create(inp);
 
-            Sheet sheet = wb.getSheet(sheetName);
+//            FileOutputStream fileOut = new FileOutputStream("C:\\HC\\IPWork_EPG_report_bak.xlsx");
+//            wb.write(fileOut);
+
+            Sheet sheet = wb.getSheet(epg.getEpgName());
             //write slots .. row 4 .. column 1,2
             int r = 4;
             for(EPGSlot epgSlot:epg.getSlots()) {
@@ -87,7 +136,7 @@ public class ExcelWriter {
             sheet.getRow(38).getCell(2).setCellValue(evaluator.evaluate(sheet.getRow(38).getCell(2)).getNumberValue());
 
             XSSFCellStyle style = (XSSFCellStyle) wb.createCellStyle();
-            style.setFillForegroundColor(new XSSFColor(new java.awt.Color(221, 235, 247)));
+            style.setFillForegroundColor(new XSSFColor(new java.awt.Color(220, 230, 241)));
             style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
 
 
@@ -183,7 +232,10 @@ public class ExcelWriter {
 
 
 
-            FileOutputStream fileOut = new FileOutputStream("D:\\Java\\MyProjects\\EPC_Report\\res\\IPWork_EPG_report.xlsx");
+//            FileOutputStream fileOut = new FileOutputStream("C:\\HC\\IPWork_EPG_report.xlsx");
+            System.out.println("writing file to disk");
+            FileOutputStream fileOut = new FileOutputStream(System.getProperty("user.dir") + "\\IPWork_EPG_report.xlsx");
+
             wb.write(fileOut);
 
             fileOut.close();
@@ -195,6 +247,7 @@ public class ExcelWriter {
 
 
     }
+
 
 
 }

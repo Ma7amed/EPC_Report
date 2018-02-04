@@ -15,9 +15,11 @@ public class EPGUtilities {
 
     public EPG parseEPGCMDLog(File file) {
 
+        System.out.println("Parsing EPG ... " + file.getAbsolutePath());
+
         EPG myEPG = new EPG();
 
-        myEPG.addCard(exeShowCard(file));
+        myEPG.addCard(exeStatus(file));
         myEPG.setMemory(exeShowMemory(file));
         myEPG.setEpgStatistics(exeStatistics(file));
         myEPG.addNotification(exeActiveNotifications(file));
@@ -120,7 +122,7 @@ public class EPGUtilities {
     }
 
 
-    public ArrayList<EPGCard> exeShowCard(File file) {
+    public ArrayList<EPGCard> exeStatus(File file) {
 
         boolean readCard = false;
         boolean readBoard = false;
@@ -138,10 +140,11 @@ public class EPGUtilities {
                 }
 
                 //Cards
-                if (line.contains(">ManagedElement=1,Epg=1,Node=1,status")) {
+                if (line.contains("ManagedElement=1,Epg=1,Node=1,status")) {
+                    System.out.println("card command start ..");
                     readCard = true;
                     continue;
-                } else if (readCard && line.contains("(exec)")) {
+                } else if (readCard && (line.contains("(exec)"))) {
                     readCard = false;
                     continue;
                 }
@@ -292,7 +295,7 @@ public class EPGUtilities {
 
                 if (readUplinkgn || readUplinks5 || readDownlinkgn || readDownlinks5) {
                     if (line.contains("bytes:")) {
-                        double bytes = Double.parseDouble(line.trim().replaceAll(" +", "").split(":")[1].trim());
+                        double bytes = Double.parseDouble(line.trim().replaceAll(" +", "").split(":")[1].trim())/1024;
 
                         if (readUplinkgn) {
                             epgStatistics.setUplinkGn(bytes);
