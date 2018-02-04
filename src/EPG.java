@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -5,25 +6,39 @@ import java.util.ArrayList;
  */
 public class EPG {
 
-    ArrayList<EPGSlot> slots;
-    ArrayList<EPGCard> cards;
-    ArrayList<EPGPort> ports;
-    ArrayList<EPGNotification> notifications;
+    private ArrayList<EPGSlot> slots;
+    private ArrayList<EPGCard> cards;
+    private ArrayList<EPGPort> ports;
+    private ArrayList<EPGNotification> notifications;
 
-    EPGMemory memory;
-    String redundancyStatus;
-    int noPdpActive;
-    int noEpsActiveBearer;
-    double uplinkGn;
-    double uplinkS5;
-    double downlinkGn;
-    double downlinkS5;
+    private EPGStatistics epgStatistics;
+
+    private String epgIP;
+    private File cmdOutFile;
+
+    private EPGMemory memory;
+    private String redundancyStatus;
+//    private int noPdpActive;
+//    private int noEpsActiveBearer;
+//    private double uplinkGn;
+//    private double uplinkS5;
+//    private double downlinkGn;
+//    private double downlinkS5;
 
     public EPG() {
         slots = new ArrayList<>();
         cards = new ArrayList<>();
         ports = new ArrayList<>();
         notifications = new ArrayList<>();
+    }
+
+    public EPG(String fileName) {
+
+        slots = new ArrayList<>();
+        cards = new ArrayList<>();
+        ports = new ArrayList<>();
+        notifications = new ArrayList<>();
+        this.cmdOutFile = new File(fileName);
     }
 
     public ArrayList<EPGSlot> getSlots() {
@@ -61,54 +76,54 @@ public class EPG {
     public void setRedundancyStatus(String redundancyStatus) {
         this.redundancyStatus = redundancyStatus;
     }
-
-    public int getNoPdpActive() {
-        return noPdpActive;
-    }
-
-    public void setNoPdpActive(int noPdpActive) {
-        this.noPdpActive = noPdpActive;
-    }
-
-    public int getNoEpsActiveBearer() {
-        return noEpsActiveBearer;
-    }
-
-    public void setNoEpsActiveBearer(int noEpsActiveBearer) {
-        this.noEpsActiveBearer = noEpsActiveBearer;
-    }
-
-    public double getUplinkGn() {
-        return uplinkGn;
-    }
-
-    public void setUplinkGn(double uplinkGn) {
-        this.uplinkGn = uplinkGn;
-    }
-
-    public double getUplinkS5() {
-        return uplinkS5;
-    }
-
-    public void setUplinkS5(double uplinkS5) {
-        this.uplinkS5 = uplinkS5;
-    }
-
-    public double getDownlinkGn() {
-        return downlinkGn;
-    }
-
-    public void setDownlinkGn(double downlinkGn) {
-        this.downlinkGn = downlinkGn;
-    }
-
-    public double getDownlinkS5() {
-        return downlinkS5;
-    }
-
-    public void setDownlinkS5(double downlinkS5) {
-        this.downlinkS5 = downlinkS5;
-    }
+//
+//    public int getNoPdpActive() {
+//        return noPdpActive;
+//    }
+//
+//    public void setNoPdpActive(int noPdpActive) {
+//        this.noPdpActive = noPdpActive;
+//    }
+//
+//    public int getNoEpsActiveBearer() {
+//        return noEpsActiveBearer;
+//    }
+//
+//    public void setNoEpsActiveBearer(int noEpsActiveBearer) {
+//        this.noEpsActiveBearer = noEpsActiveBearer;
+//    }
+//
+//    public double getUplinkGn() {
+//        return uplinkGn;
+//    }
+//
+//    public void setUplinkGn(double uplinkGn) {
+//        this.uplinkGn = uplinkGn;
+//    }
+//
+//    public double getUplinkS5() {
+//        return uplinkS5;
+//    }
+//
+//    public void setUplinkS5(double uplinkS5) {
+//        this.uplinkS5 = uplinkS5;
+//    }
+//
+//    public double getDownlinkGn() {
+//        return downlinkGn;
+//    }
+//
+//    public void setDownlinkGn(double downlinkGn) {
+//        this.downlinkGn = downlinkGn;
+//    }
+//
+//    public double getDownlinkS5() {
+//        return downlinkS5;
+//    }
+//
+//    public void setDownlinkS5(double downlinkS5) {
+//        this.downlinkS5 = downlinkS5;
+//    }
 
     public void addSlot(EPGSlot epgSlot) {
         slots.add(epgSlot);
@@ -131,6 +146,34 @@ public class EPG {
         notifications.add(epgNotification);
     }
 
+    public void addNotification(ArrayList<EPGNotification> epgNotifications) {
+        notifications.addAll(epgNotifications);
+    }
+
+
+    public String getEpgIP() {
+        return epgIP;
+    }
+
+    public void setEpgIP(String epgIP) {
+        this.epgIP = epgIP;
+    }
+
+    public File getCmdOutFile() {
+        return cmdOutFile;
+    }
+
+    public void setCmdOutFile(File cmdOutFile) {
+        this.cmdOutFile = cmdOutFile;
+    }
+
+    public EPGStatistics getEpgStatistics() {
+        return epgStatistics;
+    }
+
+    public void setEpgStatistics(EPGStatistics epgStatistics) {
+        this.epgStatistics = epgStatistics;
+    }
 
     @Override
     public String toString() {
@@ -139,14 +182,11 @@ public class EPG {
                 ", cards=" + cards +
                 ", ports=" + ports +
                 ", notifications=" + notifications +
+                ", epgStatistics=" + epgStatistics +
+                ", epgIP='" + epgIP + '\'' +
+                ", cmdOutFile=" + cmdOutFile +
                 ", memory=" + memory +
                 ", redundancyStatus='" + redundancyStatus + '\'' +
-                ", noPdpActive=" + noPdpActive +
-                ", noEpsActiveBearer=" + noEpsActiveBearer +
-                ", uplinkGn=" + uplinkGn +
-                ", uplinkS5=" + uplinkS5 +
-                ", downlinkGn=" + downlinkGn +
-                ", downlinkS5=" + downlinkS5 +
                 '}';
     }
 }

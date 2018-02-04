@@ -2,6 +2,8 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
@@ -12,13 +14,13 @@ import java.io.*;
 public class ExcelWriter {
 
     public static void main(String[] args) {
-        EPG almazaEpg = new EPG();
-        EPG octEpg = new EPG();
+        EPG almazaEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\Almaza_EPG.txt");
+        EPG octEpg = new EPG("D:\\Java\\MyProjects\\EPC_Report\\res\\OCT2EPGPCI.txt");
 
 
         EPGUtilities epgUtilities = new EPGUtilities();
-        almazaEpg = epgUtilities.parseEPGCMDLog("D:\\Java\\MyProjects\\EPC_Report\\res\\Almaza_EPG.txt");
-        octEpg = epgUtilities.parseEPGCMDLog("D:\\Java\\MyProjects\\EPC_Report\\res\\OCT2EPGPCI.txt");
+        almazaEpg = epgUtilities.parseEPGCMDLog(almazaEpg.getCmdOutFile());
+        octEpg = epgUtilities.parseEPGCMDLog(octEpg.getCmdOutFile());
         ExcelWriter excelWriter = new ExcelWriter();
         excelWriter.writeData(almazaEpg,"ALMAZA-EPG01");
         excelWriter.writeData(octEpg,"OCT-EPG01");
@@ -67,14 +69,14 @@ public class ExcelWriter {
             sheet.getRow(32).getCell(1).setCellValue(epg.getRedundancyStatus());
 
             // pdp
-            sheet.getRow(32).getCell(5).setCellValue(epg.getNoPdpActive());
-            sheet.getRow(33).getCell(5).setCellValue(epg.getNoEpsActiveBearer());
+            sheet.getRow(32).getCell(5).setCellValue(epg.getEpgStatistics().getNoPdpActive());
+            sheet.getRow(33).getCell(5).setCellValue(epg.getEpgStatistics().getNoEpsActiveBearer());
 
             // gtp statistics
-            sheet.getRow(32).getCell(8).setCellValue(epg.getUplinkGn());
-            sheet.getRow(33).getCell(8).setCellValue(epg.getUplinkS5());
-            sheet.getRow(34).getCell(8).setCellValue(epg.getDownlinkGn());
-            sheet.getRow(35).getCell(8).setCellValue(epg.getDownlinkS5());
+            sheet.getRow(32).getCell(8).setCellValue(epg.getEpgStatistics().getUplinkGn());
+            sheet.getRow(33).getCell(8).setCellValue(epg.getEpgStatistics().getUplinkS5());
+            sheet.getRow(34).getCell(8).setCellValue(epg.getEpgStatistics().getDownlinkGn());
+            sheet.getRow(35).getCell(8).setCellValue(epg.getEpgStatistics().getDownlinkS5());
 
             //memory
             sheet.getRow(35).getCell(2).setCellValue(epg.getMemory().getTotalMemory());
@@ -84,8 +86,68 @@ public class ExcelWriter {
 
             sheet.getRow(38).getCell(2).setCellValue(evaluator.evaluate(sheet.getRow(38).getCell(2)).getNumberValue());
 
+            XSSFCellStyle style = (XSSFCellStyle) wb.createCellStyle();
+            style.setFillForegroundColor(new XSSFColor(new java.awt.Color(221, 235, 247)));
+            style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
 
 
+            // active notification
+            r=43;
+            for(EPGNotification epgNotification:epg.getNotifications()) {
+                System.out.println("Row: " + r);
+
+                sheet.getRow(r).createCell(2).setCellValue("fault-id");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getFaultId());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++;
+
+                sheet.getRow(r).createCell(2).setCellValue("alarm-severity");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getAlarmSeverity());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++;
+
+                sheet.getRow(r).createCell(2).setCellValue("specific-problem");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getSpecificProblem());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++;
+
+                sheet.getRow(r).createCell(2).setCellValue("managed-object");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getManagedObject());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++;
+
+                sheet.getRow(r).createCell(2).setCellValue("additional-text");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getAdditionalText());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++;
+
+                sheet.getRow(r).createCell(2).setCellValue("event-time");
+                sheet.getRow(r).getCell(2).setCellStyle(style);
+
+
+                sheet.getRow(r).createCell(3).setCellValue(epgNotification.getEventTime());
+                sheet.getRow(r).getCell(3).setCellStyle(style);
+
+                r++; r++;
+            }
 
 
 
