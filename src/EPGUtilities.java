@@ -13,11 +13,13 @@ public class EPGUtilities {
 //        epgUtilities.parseEPGCMDLog("D:\\Java\\MyProjects\\EPC_Report\\res\\Almaza_EPG.txt");
 //    }
 
-    public EPG parseEPGCMDLog(File file) {
+    public EPG parseEPGCMDLog(EPG epg) {
 
-        System.out.println("Parsing EPG ... " + file.getAbsolutePath());
+        File file = epg.getCmdOutFile();
 
-        EPG myEPG = new EPG();
+        System.out.println("Parsing EPG ... " + epg.getCmdOutFile());
+
+        EPG myEPG = epg;
 
         myEPG.addCard(exeStatus(file));
         myEPG.setMemory(exeShowMemory(file));
@@ -29,7 +31,6 @@ public class EPGUtilities {
         boolean readredundancy = false;
         boolean readPort = false;
 
-        EPGCard epgCard2 = new EPGCard();
 
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
@@ -124,6 +125,9 @@ public class EPGUtilities {
 
     public ArrayList<EPGCard> exeStatus(File file) {
 
+        System.out.print("exeStatus ... ");
+        int foundStrings = 3;
+
         boolean readCard = false;
         boolean readBoard = false;
 
@@ -141,7 +145,7 @@ public class EPGUtilities {
 
                 //Cards
                 if (line.contains("ManagedElement=1,Epg=1,Node=1,status")) {
-                    System.out.println("card command start ..");
+//                    System.out.println("card command start ..");
                     readCard = true;
                     continue;
                 } else if (readCard && (line.contains("(exec)"))) {
@@ -150,22 +154,34 @@ public class EPGUtilities {
                 }
 
                 //inside one board
-                if (readCard && line.contains("board-information:")) {
+                if (readCard && line.contains("board:")) {
                     readBoard = true;
                     epgCard = new EPGCard();
-                    continue;
+//                    continue;
                 }
 
                 if (readBoard && line.contains("board:")) {
+                    foundStrings--;
                     epgCard.setServiceInterface(line.trim().split(":")[1].trim());
                 }
 
                 if (readBoard && line.contains("start-time:")) {
+                    foundStrings--;
                     epgCard.setStartTime(line.trim().split(": ")[1].trim());
                 }
 
                 if (readBoard && line.contains("function-name:")) {
-                    epgCard.setFunction(line.trim().split(":")[1].trim());
+                    foundStrings--;
+                    if(null == epgCard.getFunction()) {
+                        epgCard.setFunction(line.trim().split(":")[1].trim());
+                    }else {
+                        epgCard.setFunction(epgCard.getFunction() + " / " + line.trim().split(":")[1].trim());
+                    }
+//                    readBoard = false;
+
+                }
+
+                if(readBoard && ( line.contains("board-information:") || line.contains("(exec)"))) {
                     readBoard = false;
                     cards.add(epgCard);
                 }
@@ -179,15 +195,21 @@ public class EPGUtilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(cards);
+//        System.out.println(cards);
+        if(foundStrings<=0) {
+            System.out.println("Success");
+        }else {
+            System.out.println("Failed");
+        }
         return cards;
     }
 
 
     public EPGMemory exeShowMemory(File file) {
 
-
+        System.out.print("exeShowMemory ... ");
         EPGMemory myEPGMemory = new EPGMemory();
+        int foundStrings=1;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             boolean pLine = false;
@@ -202,22 +224,23 @@ public class EPGUtilities {
 
                 // GetMemory
                 if (line.contains("Memory") && line.contains("Total") && line.contains("Free")) {
-                    System.out.println("MEMORY");
+                    foundStrings--;
+//                    System.out.println("MEMORY");
                     int totalMemory = Integer.parseInt(line.split(" ")[2].replace("k,", ""));
                     int usedMemory = Integer.parseInt(line.split(" ")[4].replace("k,", ""));
                     int freeMemory = Integer.parseInt(line.split(" ")[6].replace("k,", ""));
 
 
-                    System.out.println("Total: " + totalMemory);
-                    System.out.println("Used: " + usedMemory);
-                    System.out.println("Free: " + freeMemory);
+//                    System.out.println("Total: " + totalMemory);
+//                    System.out.println("Used: " + usedMemory);
+//                    System.out.println("Free: " + freeMemory);
                     myEPGMemory = new EPGMemory();
                     myEPGMemory.setTotalMemory(totalMemory);
                     myEPGMemory.setUsedMemory(usedMemory);
                     myEPGMemory.setFreeMemory(freeMemory);
 
 
-                    System.out.println("EPGMemory: " + myEPGMemory);
+//                    System.out.println("EPGMemory: " + myEPGMemory);
 
                 }
 
@@ -231,12 +254,20 @@ public class EPGUtilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(myEPGMemory);
+//        System.out.println(myEPGMemory);
+        if(foundStrings==0) {
+            System.out.println("Success");
+        }else {
+            System.out.println("Failed");
+        }
         return myEPGMemory;
     }
 
 
     public EPGStatistics exeStatistics(File file) {
+
+        System.out.print("exeStatistics ... ");
+        int foundStrings = 4;
 
 
         EPGStatistics epgStatistics = new EPGStatistics();
@@ -264,7 +295,7 @@ public class EPGUtilities {
                     int pdpActive = Integer.parseInt(line.split(":")[1].replace(" ", ""));
 
                     epgStatistics.setNoPdpActive(pdpActive);
-                    System.out.println(pdpActive);
+//                    System.out.println(pdpActive);
                 }
 
                 //eps-active-bearer
@@ -272,18 +303,22 @@ public class EPGUtilities {
                     int noEpsActiveBearer = Integer.parseInt(line.split(":")[1].replace(" ", ""));
 
                     epgStatistics.setNoEpsActiveBearer(noEpsActiveBearer);
-                    System.out.println(noEpsActiveBearer);
+//                    System.out.println(noEpsActiveBearer);
                 }
 
                 //uplink/downlink
                 if (line.contains("uplink-gn")) {
                     readUplinkgn = true;
+                    foundStrings--;
                 } else if (line.contains("uplink-s5")) {
                     readUplinks5 = true;
+                    foundStrings--;
                 } else if (line.contains("downlink-gn")) {
                     readDownlinkgn = true;
+                    foundStrings--;
                 } else if (line.contains("downlink-s5")) {
                     readDownlinks5 = true;
+                    foundStrings--;
                 }
 
                 if (line.equals("")) {
@@ -318,7 +353,14 @@ public class EPGUtilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(epgStatistics);
+//        System.out.println(epgStatistics);
+
+        if(foundStrings==0) {
+            System.out.println("Success");
+        }else {
+            System.out.println("Failed");
+        }
+
         return epgStatistics;
     }
 
@@ -326,6 +368,8 @@ public class EPGUtilities {
     public ArrayList<EPGNotification> exeActiveNotifications(File file) {
 
 
+        System.out.print("exeActiveNotifications ... ");
+        int foundStrings = 1;
         ArrayList<EPGNotification> epgNotifications = new ArrayList<>();
 
         EPGNotification epgNotification = new EPGNotification();
@@ -348,6 +392,7 @@ public class EPGUtilities {
                 //notifications
 
                 if (line.contains("notification:")) {
+                    foundStrings--;
                     readNotification = true;
                     epgNotification = new EPGNotification();
                     continue;
@@ -380,7 +425,12 @@ public class EPGUtilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(epgNotifications);
+//        System.out.println(epgNotifications);
+        if(foundStrings<=0){
+            System.out.println("Success");
+        }else {
+            System.out.println("Failed, or no notifications");
+        }
         return epgNotifications;
     }
 
